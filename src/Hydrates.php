@@ -12,7 +12,7 @@ interface Hydrates
      * constructor, either directly or through a @see MapsObject instance.
      *
      * @param array $input  The input data.
-     * @return object       The hydrated instance.
+     * @return mixed|object The hydrated instance.
      */
     public function fromArray(array $input);
 }
