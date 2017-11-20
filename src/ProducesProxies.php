@@ -5,14 +5,16 @@ namespace Stratadox\Hydration;
 interface ProducesProxies
 {
     /**
-     * Produce a proxy and (optionally) bind it to the property of an object.
+     * Produce a @see Proxy as temporary value for the property of an object.
      *
-     * @todo Split into owned and standalone proxy producers
-     *
-     * @param object|null       $theOwner      The object this proxy gets bound to.
-     * @param string|null       $ofTheProperty The property this proxy gets bound to.
-     * @param string|int|null   $atPosition    The position of the proxy in the collection.
-     * @return object
+     * @param object          $theOwner      The object this proxy gets bound to.
+     * @param string          $ofTheProperty The property this proxy gets bound to.
+     * @param string|int|null $atPosition    The position of the proxy in the collection.
+     * @return Proxy                         The produced proxy.
      */
-    public function createFor($theOwner = null, string $ofTheProperty = null, $atPosition = null);
+    public function createFor(
+        $theOwner,
+        string $ofTheProperty,
+        $atPosition = null
+    ) : Proxy;
 }
