@@ -11,11 +11,10 @@ namespace Stratadox\Hydration;
 interface ProducesProxyLoaders
 {
     /**
-     * Produce an instance that @see LoadsProxiedObjects when they are called
-     * upon, notifying the instance that @see UpdatesTheProxyOwner when done.
+     * Produce an instance that @see LoadsProxiedObjects.
      *
      * @param UpdatesTheProxyOwner $whenLoaded
      * @return LoadsProxiedObjects
      */
-    public function makeLoaderThat(UpdatesTheProxyOwner $whenLoaded) : LoadsProxiedObjects;
+    public function makeLoader() : LoadsProxiedObjects;
 }
