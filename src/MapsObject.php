@@ -2,6 +2,12 @@
 
 namespace Stratadox\Hydration;
 
+/**
+ * Maps objects by providing access to the class name and property mappings.
+ *
+ * @author Stratadox
+ * @package Stratadox\Hydrate
+ */
 interface MapsObject
 {
     /**

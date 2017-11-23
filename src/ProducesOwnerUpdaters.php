@@ -2,6 +2,13 @@
 
 namespace Stratadox\Hydration;
 
+/**
+ * Produces Owner Updaters, which listen to lazy load operation and update the
+ * property of the proxy owner to represent the newly loaded instance.
+ *
+ * @author Stratadox
+ * @package Stratadox\Hydrate
+ */
 interface ProducesOwnerUpdaters
 {
     /**

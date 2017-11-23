@@ -2,6 +2,12 @@
 
 namespace Stratadox\Hydration;
 
+/**
+ * Produces proxies for the lazily loaded properties of the proxy owner.
+ *
+ * @author Stratadox
+ * @package Stratadox\Hydrate
+ */
 interface ProducesProxies
 {
     /**

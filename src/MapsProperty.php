@@ -2,6 +2,12 @@
 
 namespace Stratadox\Hydration;
 
+/**
+ * Maps (a portion of) the input array to the value for an object property.
+ *
+ * @author Stratadox
+ * @package Stratadox\Hydrate
+ */
 interface MapsProperty
 {
     /**

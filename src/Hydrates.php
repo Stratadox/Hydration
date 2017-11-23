@@ -2,6 +2,12 @@
 
 namespace Stratadox\Hydration;
 
+/**
+ * Hydrates an instance of a class, based on an array of property data.
+ *
+ * @author Stratadox
+ * @package Stratadox\Hydrate
+ */
 interface Hydrates
 {
     /**

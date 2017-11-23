@@ -2,6 +2,15 @@
 
 namespace Stratadox\Hydration;
 
+/**
+ * Loads proxied objects, notifying its observers in the process.
+ *
+ * Note: these are not the proxies, but the "real" objects that were previously
+ * represented by a proxy. This is the "loading" part of "lazy loading".
+ *
+ * @author Stratadox
+ * @package Stratadox\Hydrate
+ */
 interface LoadsProxiedObjects
 {
     /**

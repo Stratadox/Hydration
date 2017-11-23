@@ -2,6 +2,12 @@
 
 namespace Stratadox\Hydration;
 
+/**
+ * Proxy for the eventual value for an object property.
+ *
+ * @author Stratadox
+ * @package Stratadox\Hydrate
+ */
 interface Proxy
 {
     /**

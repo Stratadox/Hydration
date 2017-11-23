@@ -2,6 +2,12 @@
 
 namespace Stratadox\Hydration;
 
+/**
+ * Updates the proxy owner with the newly loaded instance that once was proxied.
+ *
+ * @author Stratadox
+ * @package Stratadox\Hydrate
+ */
 interface UpdatesTheProxyOwner extends ObservesProxyLoading
 {
     /**

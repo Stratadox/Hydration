@@ -2,6 +2,12 @@
 
 namespace Stratadox\Hydration;
 
+/**
+ * Observes the loading of proxies to get notified of lazy loading operations.
+ *
+ * @author Stratadox
+ * @package Stratadox\Hydrate
+ */
 interface ObservesProxyLoading
 {
     /**
