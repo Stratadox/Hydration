@@ -2,13 +2,12 @@
 
 namespace Stratadox\Hydration;
 
-interface UpdatesTheProxyOwner
+interface UpdatesTheProxyOwner extends ObservesProxyLoading
 {
     /**
      * Updates the property that referenced the proxy with the loaded instance.
      *
-     * @param object $theLoadedInstance
-     * @return void
+     * @inheritdoc
      */
-    public function updateThePropertyWith($theLoadedInstance) : void;
+    public function updateWith($theLoadedInstance) : void;
 }
