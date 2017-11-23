@@ -16,5 +16,9 @@ interface ProducesProxyLoaders
      * @param UpdatesTheProxyOwner $whenLoaded
      * @return LoadsProxiedObjects
      */
-    public function makeLoader() : LoadsProxiedObjects;
+    public function makeLoaderFor(
+        $theOwner,
+        string $ofTheProperty,
+        $atPosition = null
+    ) : LoadsProxiedObjects;
 }
