@@ -9,5 +9,5 @@ interface Proxy
      *
      * @return object
      */
-    public function load();
+    public function __load();
 }
