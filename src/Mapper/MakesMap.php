@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Stratadox\Hydration\Mapper;
 
+use Stratadox\Hydration\Hydrates;
 use Stratadox\Hydration\MapsObject;
 
 /**
@@ -32,4 +33,11 @@ interface MakesMap
      * @return MapsObject
      */
     public function map() : MapsObject;
+
+    /**
+     * Finalise the process and produce a mapped hydrator.
+     *
+     * @return Hydrates
+     */
+    public function hydrator() : MapsObject;
 }
