@@ -43,6 +43,18 @@ interface DefinesRelationships extends InstructsHowToMap
     ) : DefinesRelationships;
 
     /**
+     * Defines a choice between concrete implementations.
+     *
+     * @param string $decisionKey
+     * @param array  $choices
+     * @return DefinesRelationships
+     */
+    public function selectBy(
+        string $decisionKey,
+        array $choices
+    ) : DefinesRelationships;
+
+    /**
      * Add a property with optional mapping instructions.
      *
      * @param string                 $property    The property to define
