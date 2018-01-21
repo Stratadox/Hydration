@@ -39,5 +39,5 @@ interface MakesMap
      *
      * @return Hydrates
      */
-    public function hydrator() : MapsObject;
+    public function hydrator() : Hydrates;
 }
