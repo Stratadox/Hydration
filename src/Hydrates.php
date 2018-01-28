@@ -21,4 +21,12 @@ interface Hydrates
      * @return mixed|object The hydrated instance.
      */
     public function fromArray(array $input);
+
+    /**
+     * Retrieves the instance that is currently being hydrated, or null if no
+     * instance is being hydrated.
+     *
+     * @return mixed|object|null The instance that is currently being hydrated.
+     */
+    public function currentInstance();
 }
