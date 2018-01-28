@@ -30,14 +30,7 @@ interface MakesMap
     /**
      * Finalise the process and produce the object mapping.
      *
-     * @return MapsProperties
-     */
-    public function map() : MapsProperties;
-
-    /**
-     * Finalise the process and produce a mapped hydrator.
-     *
      * @return Hydrates
      */
-    public function hydrator() : Hydrates;
+    public function finish() : Hydrates;
 }
