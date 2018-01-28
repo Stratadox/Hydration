@@ -15,7 +15,7 @@ interface Hydrates
      *
      * The class to instantiate must be known to the hydrator.
      * The recommended way of defining the hydrated class is passing it to the
-     * constructor, either directly or through a @see MapsObject instance.
+     * constructor.
      *
      * @param array $input  The input data.
      * @return mixed|object The hydrated instance.
