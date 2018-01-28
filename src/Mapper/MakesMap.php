@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Stratadox\Hydration\Mapper;
 
 use Stratadox\Hydration\Hydrates;
-use Stratadox\Hydration\MapsProperties;
 
 /**
  * Builds the mapping for a class.
