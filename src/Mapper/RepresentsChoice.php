@@ -31,5 +31,5 @@ interface RepresentsChoice
      *
      * @return Hydrates
      */
-    public function hydrator() : Hydrates;
+    public function finish() : Hydrates;
 }
